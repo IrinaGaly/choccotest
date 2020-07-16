@@ -1,0 +1,78 @@
+
+.title-menu {
+  color: white;
+  padding: rem(101px) 0 0 rem(79px);
+
+  @include phones {
+    padding: rem(101px) rem(30px) 0 rem(40px);
+  }
+}
+.accordeon__list {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.accordeon__item {
+  height: 100%;
+  display: flex;
+}
+.accordeon__triger {
+  display: flex;
+  width: rem(100px);
+  text-decoration: none;
+  background: url('/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png');
+  justify-content: center;
+  align-items: flex-end;
+  //padding-bottom: 8%;
+
+  @include phones {
+    width: rem(81px);
+  }
+}
+.accordeon__title {
+  color: white;
+  font-size: rem(48px);
+  font-weight: bold;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+  padding-left: 45%;
+
+    @include phones {
+      padding: 20%;
+    }
+
+}
+  .accordeon__content-wrap {
+   width: 0;
+   overflow: hidden;
+   transition: 1s;
+  }
+
+
+.accordeon__content {
+  height: 100%;
+  padding: rem(50px) rem(108px) rem(50px) rem(27px);
+  overflow-y: auto;
+  background-color: rgba(51, 53, 55, .93);
+  position: relative;
+
+}
+
+.accordeon__close {
+  background: url('/images/Закрыть.svg');
+  text-decoration: none;
+  position: absolute;
+  right: rem(32px);
+  top: rem(26px);
+  width: rem(17.5px);
+  height: rem(17.5px);
+}
+
+.accordeon__text {
+  color: white;
+}
+

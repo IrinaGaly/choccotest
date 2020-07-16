@@ -1,0 +1,71 @@
+.fixed-menu {
+  position: fixed;
+  top: 33%;
+  right: 3%;
+  z-index: $z-fixed-menu;
+  color: white;
+  border-color: white;
+  
+
+  @include tablets {
+    display: none;
+  }
+  }
+
+.fixed-menu__item {
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  border:  1px solid transparent;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.fixed-menu__point {
+  //content: "";
+  display: block;
+  width: rem(6px);
+  height: rem(6px);
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  }
+  
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+
+.fixed-menu__item:hover {
+  border-color: inherit;
+}
+.fixed-menu__item_active {
+  border-color: inherit;
+}
+
+
+.fixed-menu-shadow {
+  position: fixed;
+  top: 33%;
+  right: 3%;
+  z-index: $z-fixed-menu;
+  color: black;
+  border-color: black;
+}
+
+  .fixed-menu__point-shadow {
+  //content: "";
+  display: block;
+  width: rem(6px);
+  height: rem(6px);
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  }

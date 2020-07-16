@@ -1,0 +1,28 @@
+.becauses__section {
+  position: relative;
+  background: url('../images/узор\ лист.png') left top 57% no-repeat;
+
+  @include tablets {
+    background-position: left top no-repeat;
+  }
+
+  @include phones {
+    background: none;
+  }
+
+    &:before {
+      content: url("../images/батончик\ малина.png");
+      position: absolute;
+      bottom: rem(-80px);
+      left: 0;
+      z-index: 5;
+
+      @include tablets {
+        bottom: rem(-180px);
+      }
+
+      @include phones {
+        display: none;
+      }
+    }
+}

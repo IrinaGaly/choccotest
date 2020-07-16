@@ -1,0 +1,16 @@
+.player-section {
+  background: #F8FAF9;
+  position: relative;
+
+  &::before {
+    content: url('/images/Ежевика\ фото@1X.png');
+    height: rem(264px);
+    width: rem(242px);
+    position: absolute;
+    display: block;
+    bottom: -13%;
+    right: -4%;
+    z-index: 5;
+  }
+}
+

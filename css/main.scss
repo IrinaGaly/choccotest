@@ -1,0 +1,60 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breackpoints 
+$tablets: 768px;
+$phones: 480px;
+$iphones5: 320px;
+
+
+//colors
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+// 
+$z-fixed-menu: 100;
+
+//viewports
+
+@import "media";
+
+//normalize
+@import url("normalize.css");
+
+//setup
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap'); 
+@import "layout";
+
+//components 
+@import "components/section-hero";
+@import "components/header";
+@import "components/badges";
+@import "components/btn";
+@import "components/section";
+@import "components/headline";
+@import "components/becauses";
+@import "components/because";
+@import "components/section-becauses";
+@import "components/rewievs";
+@import "components/interactive-feedback";
+@import "components/section-rewievs";
+@import "components/section-order";
+@import "components/form";
+@import "components/radio";
+@import "components/fixed-menu";
+@import "components/map";
+@import "components/section-map";
+@import "components/footer";
+@import "components/sprite";
+@import "components/social";
+@import "components/menu";
+@import "components/section-menu";
+@import "components/gamburger";
+@import "components/bar-slider";
+@import "components/section-bar";
+@import "components/composition";
+@import "components/team";
+@import "components/modal";
+@import "components/player";
+@import "components/section-player";
+@import "components/player-controls";

@@ -1,0 +1,60 @@
+.btn {
+  font-size: rem(19px);
+  font-weight: bold;
+  padding: rem(18px) rem(34px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  border: white;
+  text-decoration: none;
+
+  &_theme_white {
+    background: white;
+    color: $darkGreen;
+  }
+
+    &:hover {
+      color: white;
+      background: $darkGreen;
+    }
+   
+    &_theme_green {
+      background: $darkGreen;
+      color: white;
+
+      &:hover {
+        background: white;
+        color: $darkGreen;
+      }
+    }
+
+    &_theme_transparent {
+      background: transparent;
+      color: black;
+
+      &:hover {
+        background: $darkGreen;
+        color: white;
+      }
+
+    }
+
+    &-bars {
+      background: #365A49;
+      color: white;
+    
+      &:hover {
+        background: $darkGreen;
+      }
+    }
+}
+
+// .btn-bars {
+//   background: #365A49;
+//   color: white;
+
+//   &:hover {
+//     background: $darkGreen;
+//   }
+// }
+

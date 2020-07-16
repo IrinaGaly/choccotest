@@ -1,0 +1,117 @@
+.phone-number__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-icon {
+  fill: white;
+  width: 12px;
+  height: 12px;
+}
+
+
+.badge__icons {
+  fill: white;
+  width: 44px;
+  height: 42px;
+}
+
+.gumburger {
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.gamburger-icon {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  display: none;
+  
+  @include tablets {
+    display: inline-flex;
+    }
+}
+
+.because__icons {
+  width: rem(75px);
+  height: rem(69px);
+  fill: #2E2E2D;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone-icon_footer {
+  fill: #365A49;
+}
+
+.social__icons {
+  fill: #aaa9a9;
+
+   &:hover {
+     fill: black;
+   }
+}
+
+.chocolate {
+  width: rem(51px);
+  height: rem(51px);
+  fill: white;
+}
+
+.composition__icon {
+  width: 35px;
+  height: 35px;
+}
+
+.play-start__icon {
+  width: rem(82px);
+  height: rem(118px);
+  fill: white;
+  opacity: 0.9019607843137255;
+
+  @include tablets {
+    width: rem(73px);
+    height: rem(106px);
+  }
+
+  @include phones {
+    width: rem(49px);
+    height: rem(71px);
+  }
+}
+
+.playback__icon {
+  width: rem(16px);
+  height: rem(22px);
+  fill: #626262;
+
+  @include tablets {
+    width: rem(14px);
+    height: rem(20px);
+  }
+
+  @include phones {
+    width: rem(10px);
+    height: rem(13px);
+  }
+}
+
+.volume__icon {
+  width: rem(18px);
+  height: rem(22px);
+  fill: #626262;
+
+  @include tablets {
+    width: rem(14px);
+    height: rem(20px);
+  }
+
+  @include phones {
+    width: rem(10px);
+    height: rem(13px);
+  }
+}

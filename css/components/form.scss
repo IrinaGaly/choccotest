@@ -1,0 +1,88 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  color: $darkGreen;
+
+   
+  
+    //@include phones {
+     // padding: 0 0 10%;
+    
+
+
+  &__col {
+    flex: 1;
+    margin-right: rem(20px);
+
+    @include tablets {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(18px);
+  }
+
+  &__block {
+    flex: 1;
+    margin-right: rem(31px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    padding: rem(18px) rem(11px);
+    border: rem(3px) solid transparent;
+
+      @include tablets {
+        padding: rem(8px) rem(4px);
+      }
+
+      &_textarea {
+        height: rem(180px);
+        resize: none; 
+      }
+
+      &:focus {
+        border-color: #dee2bd;
+        outline: none;
+      }
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(7px);
+
+    @include phones {
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+  &__btns {
+    margin-top: rem(39px);
+
+    @include tablets {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}
+.form {
+@include tablets {
+  flex-direction: column;
+  padding: 0 19% 10%;
+}
+}

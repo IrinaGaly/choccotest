@@ -1,0 +1,148 @@
+
+.team__list {
+  display: flex;
+  flex-direction: row;
+  
+
+  @include tablets {
+    display: none;
+    margin-bottom: rem(40px);
+  }
+}
+.team__version__mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+    @include tablets {
+      display: flex;
+    }
+}
+
+
+.members__item {
+  width: calc(100% / 4 - 20px);
+  margin-right: rem(17px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
+    margin-right: 0;
+    width: rem(242px);
+  }
+}
+// .active {
+//   @include tablets {
+//   min-height: rem(446px);
+//   } 
+// }
+.members__photo {
+  width: rem(224px);
+  height: rem(289px);
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+
+  // @include tablets {
+  //   position: absolute;
+  //   top: 35%;
+  // }
+}
+
+.members__img {
+  margin-bottom: rem(26px);
+  
+  //margin: 0 rem(17px) rem(26px) 0;
+  
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.members__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(13px);
+}
+
+.members__triangle {
+  border: 4px solid transparent; 
+  border-top: 6px solid #365A49;
+  margin-top: 4px;
+}
+
+.members__triangle_active {
+  border: 4px solid transparent; 
+  border-bottom: 6px solid #365A49;
+  margin: 0 0 3px 0;
+}
+
+.members__name {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: rem(21px);
+  margin-right: 2px;
+  
+}
+
+// .members__info-desctop {
+//   position: absolute;
+//   top: 100%;
+// }
+.members__info {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height .3s;
+    height: 0;
+
+}
+
+.members__info-desctop {
+    position: absolute;
+    top: 100%;
+    width: calc(100% / 4 - 20px);
+
+}
+.members__info-wrapper {
+  position: absolute;
+  top: 0;
+  height: rem(150px);
+
+   @include tablets {
+    height: rem(409px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+}
+.members__info-position {
+    color: black;
+    text-align: center;
+  }
+
+.members__info-desc {
+    text-align: center;
+  }
+// .members__info {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 0;
+//   overflow: hidden;
+// }
+// .members__info_active {
+//   height: auto;
+// }

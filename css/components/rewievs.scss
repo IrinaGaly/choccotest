@@ -1,0 +1,108 @@
+.rewievs__display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8faf9 url('../images/веточка.png') right top no-repeat;
+  padding: rem(50px) rem(45px) rem(34px);
+  margin-bottom: rem(20px);
+  overflow: hidden;
+  position: relative;
+  
+
+  &:before {
+    content: "";
+    display: block;
+    width: rem(90px);
+    height: rem(90px);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: rem(-65px);
+  }
+
+}
+
+.rewievs__list {
+  position: relative;
+  min-height: rem(280px);
+    
+}
+
+
+.rewievs__item {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transform: .3s;
+  opacity: 0;
+
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.rewievs__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
+// .rewievs__display-inner_deactive {
+//   display: none;
+
+//   @include tablets {
+//     display: block;
+//   }
+
+// }
+
+.rewievs__feedback {
+  width: rem(245px);
+  height: rem(260px);
+
+    @include tablets {
+      width: rem(133px);
+      height: rem(135px);
+      margin-bottom: rem(32px);
+    }
+}
+
+.rewievs__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+.rewievs__content {
+  flex: 1;
+  margin-left: rem(20px);
+  min-height: rem(317px);
+
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.rewievs__title {
+  font-size: rem(30px);
+  font-weight: bold;
+  margin-bottom: rem(22px);
+  color: black;
+}
+
+.rewievs__text {
+  margin-bottom: rem(36px);
+}
+.rewievs__author {
+  font-size: rem(18px);
+  font-weight: bold;
+  color: black;
+}

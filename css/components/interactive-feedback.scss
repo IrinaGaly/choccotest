@@ -1,0 +1,48 @@
+.interactive-feedback {
+  width: rem(80px);
+  height: rem(80px);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  //border: none;
+  border: rem(5px) solid transparent;
+  &:hover {
+    border: rem(5px) solid #0f5a47;
+    border-radius: 50%;
+  }
+}
+
+.interactive-feedback_active {
+  border: rem(5px) solid #0f5a47;
+  border-radius: 50%;
+}
+
+.interactive-feedback__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.interactive-feedback__avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rewievs__switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.rewievs__switcher-item {
+  margin-right: rem(8px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

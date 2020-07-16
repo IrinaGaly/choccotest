@@ -1,0 +1,39 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: rem(25px) 0;
+  background: #ffffff;
+  color: #000000;
+
+}
+
+.footer__phone-number_down {
+  font-style: normal; 
+  color: #365A49;
+
+  @include phones {
+    padding: rem(20px) 0 0;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__addres {
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

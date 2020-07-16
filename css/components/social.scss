@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  padding: rem(30px) 0 0;
+
+  @include phones {
+    padding: rem(20px) 0 0;
+  }
+}
+
+.social__icons {
+  width: rem(20px);
+  height: rem(20px);
+  margin-right: rem(20px);
+}

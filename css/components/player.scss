@@ -1,0 +1,67 @@
+.player-section__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: url('/images/Лист\ 3.png');
+    height: rem(78px);
+    width: rem(56px);
+    position: absolute;
+    display: block;
+    bottom: -8%;
+    left: -1%;
+  }
+
+  &::after {
+    content: url('/images/лист@1X.png');
+    height: rem(77px);
+    width: rem(90px);
+    position: absolute;
+    display: block;
+    top: -20%;
+    right: -2%;
+  }
+}
+.player {
+  width: rem(663px);
+  height: rem(408px);
+  position: relative;
+
+   
+  @include tablets {
+    width: rem(599px);
+    height: rem(365px);
+  }
+
+  @include phones {
+    width: rem(399px);
+    height: rem(246px);
+  }
+
+}
+
+.player__wrapper {
+  position: relative;
+}
+
+.player-video {
+  width: rem(663px);
+  height: rem(408px);
+
+  @include tablets {
+    width: rem(599px);
+    height: rem(365px);
+  }
+
+  @include phones {
+    width: rem(399px);
+    height: rem(246px);
+  }
+
+}
+
+
+
+

@@ -1,0 +1,43 @@
+.because {
+  text-align: center;
+
+  @include phones {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(50px);
+  }
+}
+
+.because__image-wrapper {
+  display: inline-block;
+  width: rem(126px);
+  height: rem(126px);
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: rem(35px);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(15px);
+  }
+}
+
+
+.because__title {
+  color: black;
+  margin-bottom: rem(25px);
+  font-weight: bold;
+  font-size: rem(27px);
+
+  @include phones {
+    text-align: start;
+  }
+}
+
+.because__desc {
+  @include phones {
+    text-align: start;
+  }
+}

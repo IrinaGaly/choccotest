@@ -1,0 +1,49 @@
+.composition {
+  width: rem(271px);
+  min-height: rem(330px);
+  position: absolute;
+  top: 0;
+  left: rem(93px);
+  background: rgba($color: #ffffff, $alpha: 0.9);
+  padding: 20%;
+  border-radius: 4px;
+  display: none;
+}
+
+.right-bar__icon:hover .composition {
+  display: block;
+}
+
+.composition-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.composition__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.composition__icon {
+  margin-bottom: rem(10px);
+  margin-right: rem(10px);
+}
+.cacao {
+  margin-bottom: 0;
+}
+
+.composition__text {
+  color:black;
+  font-size: rem(16px);
+  padding: rem(5px) rem(10px) 0 rem(8px);
+}
+.composition__weight {
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+.composite__line-right {
+  display: flex;
+  flex-direction: row;
+}

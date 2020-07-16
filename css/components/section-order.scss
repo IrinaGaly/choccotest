@@ -1,0 +1,47 @@
+.section__order {
+  background: url('../images/паттерн.png') center center / 100%;
+
+  //@include tablets {
+  //height: fit-content;
+  //}
+}
+
+.title__order {
+  margin-bottom: rem(55px);
+  color: $darkGreen;
+
+  @include tablets {
+    padding-top: 10%;
+  }
+}
+
+.section__order {
+  position: relative;
+  
+  &::before {
+    content: url('../images/berry1.png');
+    width: rem(47px);
+    height: rem(48px);
+    position: absolute;
+    bottom: 8%;
+    left: 3%;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+    &::after {
+      content: url('../images/list4.png');
+      width: rem(135px);
+      height: rem(188px);
+      position: absolute;
+      right: 0;
+      bottom: 8%;
+
+      @include tablets {
+        display: none;
+      }
+    }
+
+}

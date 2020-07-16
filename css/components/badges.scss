@@ -1,0 +1,26 @@
+
+
+
+.badges {
+  display: flex;
+}
+.badges__item {
+  margin-right: rem(46px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.badge {
+  display: flex;
+}
+
+.badge__icon {
+  width: rem(45px);
+  margin-right: rem(7px);
+}
+
+.badge__text {
+  font-size: rem(16px);
+  max-width: rem(85px);
+}

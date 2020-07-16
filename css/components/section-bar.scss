@@ -1,0 +1,59 @@
+.section-bars {
+  position: relative;
+  background: #F8FAF9;
+}
+
+.section-bars::before {
+  content: url('../images/leaf-berry.png');
+  position: absolute;
+  height: rem(453px);
+  width: rem(196px);
+  right: 0;
+  bottom: -14%;
+  z-index: 5;
+
+  @include phones {
+    height: rem(413px);
+    width: rem(171px);
+  }
+}
+
+.left__ship-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: -1%; 
+
+  @include tablets {
+  top: 50%;
+  left: 3%; 
+  }
+}
+
+.right__ship-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:50%;
+  right: -1%;
+
+  @include tablets {
+    top: 50%;
+    right: 3%; 
+    }
+}
+
+.left-ship-icon {
+  width: rem(16px);
+  height: rem(29px);
+  transform: rotate(180deg);
+  margin-right: rem(48px);
+}
+
+.right-ship-icon {
+  width: rem(16px);
+  height: rem(29px);
+}

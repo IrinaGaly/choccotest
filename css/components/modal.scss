@@ -1,0 +1,45 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(00, 00, 00, .5);
+  padding: 20% 40%;
+  display: none;
+  
+}
+
+.modal .fancybox-content {
+  padding: 0 !important;
+  display: flex;
+}
+
+.fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  
+  width: rem(303px);
+  height: rem(174px);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-error {
+  border: rem(3px) solid hotpink;
+}
+.modal__button-container {
+  margin-top: rem(15px);
+}
+
+.modal__content {
+  margin-bottom: rem(15px);
+  color: #000000;
+  //padding: rem(35px) rem(60px);
+}
+
