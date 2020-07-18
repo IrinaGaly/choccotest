@@ -80,3 +80,5 @@ $(".accordeon__close").on("click", e => {
 
 });
 
+
+
