@@ -174,7 +174,7 @@ footer {
     content: "";
     width: 19.6666666667rem;
     height: 20.3333333333rem;
-    background: url("./../../images/батончики-таблет.png") center center/contain no-repeat;
+    background: url("./../images/батончики-таблет.png") center center/contain no-repeat;
     margin-bottom: 1.2777777778rem;
   }
 }
