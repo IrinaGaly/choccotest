@@ -3,7 +3,7 @@
   position: relative;
 
   &::before {
-    content: url('/images/Ежевика\ фото@1X.png');
+    content: url('./../images/Ежевика\ фото@1X.png');
     height: rem(264px);
     width: rem(242px);
     position: absolute;

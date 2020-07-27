@@ -23,7 +23,7 @@
   display: flex;
   width: rem(100px);
   text-decoration: none;
-  background: url('/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png');
+  background: url('./../../images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png');
   justify-content: center;
   align-items: flex-end;
   //padding-bottom: 8%;
@@ -63,7 +63,7 @@
 }
 
 .accordeon__close {
-  background: url('/images/Закрыть.svg');
+  background: url('./../../images/Закрыть.svg');
   background-size: cover;
   text-decoration: none;
   position: absolute;
