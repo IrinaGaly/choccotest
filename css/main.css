@@ -1115,7 +1115,7 @@ footer {
   display: flex;
   width: 5.5555555556rem;
   text-decoration: none;
-  background: url("/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png");
+  background: url("../images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png");
   justify-content: center;
   align-items: flex-end;
 }
@@ -1155,7 +1155,7 @@ footer {
 }
 
 .accordeon__close {
-  background: url("/images/Закрыть.svg");
+  background: url("../images/Закрыть.svg");
   background-size: cover;
   text-decoration: none;
   position: absolute;
@@ -1170,7 +1170,7 @@ footer {
 }
 
 .section-accordeon {
-  background: url("/images/картинка.png"), #000000;
+  background: url("../images/картинка.png"), #000000;
   position: relative;
   background-size: cover;
   display: flex;
